@@ -15,7 +15,9 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot' 
-apply plugin: 'io.spring.dependency-management' 
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'groovy'
+
 
 jar {
     baseName = 'caixaseguradora'
@@ -36,6 +38,7 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
     compile("org.springframework.boot:spring-boot-starter-remote-shell")
+    compile("org.codehaus.groovy:groovy-all:2.3.10")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 
@@ -51,6 +54,10 @@ eclipse {
          containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
          containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
     }
+}
+
+springBoot {
+    mainClass = 'br.com.caixaseguradora.CaixaSeguradoraApplication'
 }
 
 task wrapper(type: Wrapper) {
