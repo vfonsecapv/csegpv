@@ -34,6 +34,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
     compile("org.codehaus.groovy:groovy-all:2.3.10")
+    compile project (":caixaseguradora-redis")
 }
 
 dependencyManagement {

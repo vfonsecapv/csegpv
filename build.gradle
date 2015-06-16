@@ -30,10 +30,6 @@ project(':caixaseguradora-ui') {
     
 }
 
-project(':caixaseguradora-service-quote') {
-    
-}
-
 project(':caixaseguradora-service-produto') {
     
 }
@@ -43,14 +39,6 @@ project(':caixaseguradora-service-pessoa') {
 }
 
 project(':caixaseguradora-service-endereco') {
-    
-}
-
-project(':caixaseguradora-service-cobertura') {
-    
-}
-
-project(':caixaseguradora-service-assistencia') {
     
 }
 

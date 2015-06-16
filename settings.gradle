@@ -1,1 +1,1 @@
-include "caixaseguradora-ui", "caixaseguradora-service-quote", "caixaseguradora-service-produto", "caixaseguradora-service-pessoa", "caixaseguradora-service-endereco", "caixaseguradora-service-cobertura", "caixaseguradora-service-assistencia", "caixaseguradora-redis"
+include "caixaseguradora-ui", "caixaseguradora-service-produto", "caixaseguradora-service-pessoa", "caixaseguradora-service-endereco", "caixaseguradora-redis"
