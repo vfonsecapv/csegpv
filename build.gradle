@@ -54,6 +54,10 @@ project(':caixaseguradora-service-assistencia') {
     
 }
 
+project(':caixaseguradora-redis') {
+    
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
