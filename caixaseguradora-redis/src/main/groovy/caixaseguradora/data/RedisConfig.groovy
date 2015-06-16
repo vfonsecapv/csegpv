@@ -1,7 +1,6 @@
-package br.com.teste.framework;
-import groovy.transform.PackageScope
+package redisgroovy
 
-public interface RedisConfig {
-	def setEntity(String key, Object entity);
-	def getEntity(Class<?> entityType, String key);
+interface RedisConfig {
+	def setEntity(String key, Object entity)
+	def getEntity(Class<?> entityType, String key)
 }
