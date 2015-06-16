@@ -1,0 +1,8 @@
+---
+applications:
+- name: cseg-service-cobertura
+  memory: 1GB
+  instances: 1
+  path: build/libs/caixaseguradora-service-cobertura-0.0.1-SNAPSHOT.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
