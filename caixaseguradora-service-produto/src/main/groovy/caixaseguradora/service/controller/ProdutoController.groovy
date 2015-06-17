@@ -17,6 +17,11 @@ class ProdutoController {
 	@ResponseBody
 	newProduto(@RequestBody Produto produto) {
 		redis.setEntity(produto.id, produto)
-		redis.getEntity(Produto.class, produto.id)
+	}
+
+	@RequestMapping(method=RequestMethod.GET)
+	@ResponseBody
+	getProdutoByID(@RequestParam(value="key", defaultValue="0") String key) {
+		redis.getEntity(Produto.class, key)
 	}
 }

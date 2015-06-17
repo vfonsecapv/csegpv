@@ -38,10 +38,6 @@ project(':caixaseguradora-service-pessoa') {
     
 }
 
-project(':caixaseguradora-service-endereco') {
-    
-}
-
 project(':caixaseguradora-redis') {
     
 }
