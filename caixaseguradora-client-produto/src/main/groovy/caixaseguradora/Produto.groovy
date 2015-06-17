@@ -1,8 +1,6 @@
-package caixaseguradora;
+package caixaseguradora
 
 class Produto {
-
-	String id;
-	String nome;
-
+	String id
+	String nome
 }

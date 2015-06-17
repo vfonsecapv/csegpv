@@ -1,36 +1,19 @@
-package caixaseguradora;
+package caixaseguradora
 
 import feign.Feign
 import feign.jackson.JacksonDecoder
 
-/**
- * 
- * @author TER01074
- *
- */
-public class ProdutoRepositoryFactory {
-
-	/**
-	 * 
-	 * @param url
-	 * @return
-	 */
-	public ProdutoRepository create(String url) {	
+class ProdutoRepositoryFactory {
+	def create(String url) {	
 		ProdutoRepository produtoRepository = Feign.builder()
 				.decoder(new JacksonDecoder())
-				.target(ProdutoRepository.class, url);
-		produtoRepository.getProdutos();
+				.target(ProdutoRepository.class, url)
+		produtoRepository.getProdutos()
 	}
 
-	/**
-	 * 
-	 * @param url
-	 * @return
-	 */
-	public ProdutoRepository create(URL url) {
+	def create(URL url) {
 		return create(url.toString());
 	}
-
 }
 
 
