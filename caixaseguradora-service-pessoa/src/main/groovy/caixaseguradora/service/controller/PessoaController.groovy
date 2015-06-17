@@ -21,7 +21,7 @@ class ProdutoController {
 
 	@RequestMapping("/pessoa/{key}")
 	@ResponseBody
-	getPessoaByID(@PathVariable("key") String key) {
+	getPessoaByKey(@PathVariable("key") String key) {
 		redis.getEntity(Pessoa.class, "pes:" + key)
 	}
 
@@ -32,9 +32,16 @@ class ProdutoController {
 		def pessoas = []
 
 		prdKeys.eachWithIndex { value, i ->
-		  pessoas += redis.getEntity(Pessoa.class, value)
+		  pessoas << redis.getEntity(Pessoa.class, value)
 		}
 
 		pessoas
 	}
+	
+	@RequestMapping("/del/{key}")
+	@ResponseBody
+	deletePessoaByKey(@PathVariable("key") String key) {
+		redis.getTemplate().delete("pes:" + key)
+	}
+
 }
