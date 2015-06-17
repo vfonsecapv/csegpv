@@ -19,12 +19,6 @@ class ProdutoController {
 		redis.setEntity("prd:" + produto.id, produto)
 	}
 
-	@RequestMapping("/{key}")
-	@ResponseBody
-	getProdutoByID(@PathVariable("key") String key) {
-		redis.getEntity(Produto.class, "prd:" + key)
-	}
-
 	@RequestMapping("/produtos")
 	@ResponseBody
 	getAllProdutos() {
@@ -36,5 +30,17 @@ class ProdutoController {
 		}
 
 		produtos
+	}
+
+	@RequestMapping("/prd/{key}")
+	@ResponseBody
+	getProdutoByKey(@PathVariable("key") String key) {
+		redis.getEntity(Produto.class, "prd:" + key)
+	}
+
+	@RequestMapping("/del/{key}")
+	@ResponseBody
+	deleteProdutoByKey(@PathVariable("key") String key) {
+		redis.getTemplate().delete("prd:" + key)
 	}
 }
