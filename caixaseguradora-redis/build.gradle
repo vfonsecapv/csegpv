@@ -43,8 +43,9 @@ dependencies {
     compile("org.codehaus.jackson:jackson-core-asl:1.9.13")
     compile("org.codehaus.jackson:jackson-mapper-asl:1.9.13")
     
-    compile("com.fasterxml.jackson.core:jackson-core:2.3.3")
-    compile("com.fasterxml.jackson.core:jackson-databind:2.3.3")
+    compile("com.fasterxml.jackson.core:jackson-core:2.5.4")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.5.4")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.5.4")
 
     compile("com.netflix.feign:feign-core:6.1.3")
     compile("com.netflix.feign:feign-jackson:6.1.3")
