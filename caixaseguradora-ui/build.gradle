@@ -9,6 +9,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("de.obqo.gradle:gradle-lesscss-plugin:1.0-1.3.3")
     }
 }
 
@@ -32,6 +33,8 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
     compile("org.codehaus.groovy:groovy-all:2.3.10")
 
