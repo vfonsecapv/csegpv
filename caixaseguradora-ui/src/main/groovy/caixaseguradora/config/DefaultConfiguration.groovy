@@ -1,4 +1,4 @@
-package caixaseguradora.config;
+package caixaseguradora.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -9,11 +9,11 @@ import caixaseguradora.client.ProdutoRepositoryFactory
 
 @Configuration
 @Profile("default")
-public class DefaultConfiguration {
+class DefaultConfiguration {
 
 	@Bean
-	public ProdutoRepository cityRepository() {
-		return new ProdutoRepositoryFactory().create("http://192.168.100.7:9090");
+	ProdutoRepository cityRepository() {
+		new ProdutoRepositoryFactory().create("http://192.168.100.7:9090")
 	}
 
 }
