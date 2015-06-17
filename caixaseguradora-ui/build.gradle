@@ -40,7 +40,7 @@ dependencies {
 
 	compile project (":caixaseguradora-client-produto")
 
-    compile("org.webjars:materializecss:0.96.0")
+    compile("org.webjars.bower:materialize:0.96.1")
     compile("org.webjars:angularjs:1.4.0")
     compile("org.webjars:angular-ui-router:0.2.11")
     compile("org.webjars:angular-ui:0.4.0-3")
