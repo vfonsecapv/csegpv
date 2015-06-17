@@ -1,8 +1,5 @@
 package caixaseguradora.service.model
 
-import groovy.transform.CompileStatic
-
-@CompileStatic
 class Produto {
 	List<Assistencia> assistencias = []
 	List<Cobertura> coberturas = []

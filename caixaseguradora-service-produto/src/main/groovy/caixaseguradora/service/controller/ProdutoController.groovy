@@ -4,11 +4,9 @@ import caixaseguradora.service.model.Produto
 
 import org.springframework.web.bind.annotation.*
 import org.springframework.beans.factory.annotation.*
-import groovy.transform.CompileStatic
 
 import caixaseguradora.data.RedisConfig
 
-@CompileStatic
 @RestController
 @RequestMapping("/produto")
 class ProdutoController {
