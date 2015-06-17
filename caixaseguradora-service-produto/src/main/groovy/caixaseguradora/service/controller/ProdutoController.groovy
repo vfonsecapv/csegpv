@@ -26,7 +26,7 @@ class ProdutoController {
 		def produtos = []
 
 		prdKeys.eachWithIndex { value, i ->
-		  produtos += redis.getEntity(Produto.class, value)
+		  produtos << redis.getEntity(Produto.class, value)
 		}
 
 		produtos
