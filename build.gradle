@@ -16,6 +16,7 @@ buildscript {
 subprojects {
     apply plugin: 'groovy'
     apply plugin: 'java'
+    apply plugin: 'eclipse'
     apply plugin: 'spring-boot'
 
     sourceCompatibility = 1.8
@@ -27,6 +28,10 @@ subprojects {
 } 
 
 project(':caixaseguradora-ui') {
+    
+}
+
+project(':caixaseguradora-client-produto') {
     
 }
 
