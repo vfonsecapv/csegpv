@@ -16,12 +16,18 @@ class ProdutoController {
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
 	newProduto(@RequestBody Produto produto) {
-		redis.setEntity(produto.id, produto)
+		redis.setEntity("prd:" + produto.id, produto)
 	}
 
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping("/{key}")
 	@ResponseBody
-	getProdutoByID(@RequestParam(value="key", defaultValue="0") String key) {
-		redis.getEntity(Produto.class, key)
+	getProdutoByID(@PathVariable("key") String key) {
+		redis.getEntity(Produto.class, "prd:" + key)
+	}
+
+	@RequestMapping("/produtos")
+	@ResponseBody
+	getAllProdutos() {
+		
 	}
 }
