@@ -19,7 +19,7 @@ class ProdutoController {
 		redis.setEntity("pes:" + pessoa.id, pessoa)
 	}
 
-	@RequestMapping("/pessoa/{key}")
+	@RequestMapping("/pes/{key}")
 	@ResponseBody
 	getPessoaByKey(@PathVariable("key") String key) {
 		redis.getEntity(Pessoa.class, "pes:" + key)
