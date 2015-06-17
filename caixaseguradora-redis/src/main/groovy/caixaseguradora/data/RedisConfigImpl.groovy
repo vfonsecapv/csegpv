@@ -18,13 +18,13 @@ class RedisConfigImpl implements RedisConfig {
 	@Bean
 	def createTemplate(RedisConnectionFactory connectionFactory) {
 		RedisTemplate tmpl = new RedisTemplate<String, Object>()
+		tmpl.setKeySerializer(new StringRedisSerializer())
 		tmpl.setConnectionFactory(connectionFactory)
 		template = tmpl
 		tmpl
 	}
 
 	def setEntityType(Class<?> entityType){
-		template.setKeySerializer(new StringRedisSerializer())
 		template.setValueSerializer(new JacksonJsonRedisSerializer<>(entityType))
 	}
 

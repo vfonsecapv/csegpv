@@ -28,6 +28,13 @@ class ProdutoController {
 	@RequestMapping("/produtos")
 	@ResponseBody
 	getAllProdutos() {
-		
+		def prdKeys = redis.getTemplate().keys("prd:*")
+		def produtos = []
+
+		prdKeys.eachWithIndex { value, i ->
+		  produtos += redis.getEntity(Produto.class, value)
+		}
+
+		produtos
 	}
 }
