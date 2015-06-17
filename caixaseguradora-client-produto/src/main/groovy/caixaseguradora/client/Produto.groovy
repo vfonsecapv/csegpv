@@ -1,4 +1,4 @@
-package caixaseguradora
+package caixaseguradora.client
 
 class Produto {
 	String id
