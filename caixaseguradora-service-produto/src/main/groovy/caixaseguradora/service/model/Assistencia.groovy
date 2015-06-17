@@ -9,7 +9,4 @@ import com.fasterxml.jackson.annotation.*
 class Assistencia {
 	String nome
 	String id
-
-	def getNome() { nome }
-	def getId() { id }
 }
