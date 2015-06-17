@@ -17,7 +17,6 @@ class ProdutoController {
 	@ResponseBody
 	newProduto(@RequestBody Produto produto) {
 		redis.setEntity(produto.id, produto)
-
-		(Produto)redis.getEntity(Produto.class, produto.id)
+		redis.getEntity(Produto.class, produto.id)
 	}
 }
