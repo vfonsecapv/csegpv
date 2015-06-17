@@ -5,14 +5,10 @@ import groovy.transform.ToString
 import com.fasterxml.jackson.annotation.*
 
 @ToString
+@JsonAutoDetect(fieldVisibility=JsonAutoDetect.Visibility.ANY)
 class Produto {
-	@JsonProperty("assistencias")
 	Assistencia[] assistencias
-
-	@JsonProperty("coberturas")
 	Cobertura[] coberturas
-
-	@JsonProperty("itensSegurados")
 	ItemSegurado[] itensSegurados
 
 	String nome
