@@ -6,5 +6,5 @@
 .gradle/*
 .idea
 .iml
-.rdb
 **/.DS_Store
+/build/
