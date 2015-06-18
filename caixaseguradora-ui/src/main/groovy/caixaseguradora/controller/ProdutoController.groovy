@@ -29,8 +29,8 @@ class ProdutoController {
 	}
 
 	@HystrixCommand
-	@RequestMapping("/lista")	
-	public def listarProdutos() {
+	@RequestMapping("/listar")	
+	def listarProdutos() {
 		repository.getProdutos()
 	}
 }
