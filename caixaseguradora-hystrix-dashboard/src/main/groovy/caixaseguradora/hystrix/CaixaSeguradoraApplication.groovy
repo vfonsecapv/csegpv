@@ -5,10 +5,8 @@ import org.springframework.boot.*
 import org.springframework.boot.autoconfigure.*
 
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard
-import org.springframework.stereotype.Controller
 
 @SpringBootApplication
-@Controller
 @EnableHystrixDashboard
 class CaixaSeguradoraApplication {
 	@RequestMapping("/")
