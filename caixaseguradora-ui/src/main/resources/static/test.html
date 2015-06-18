@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	  <title></title>
+	
+	  <!-- CSS  -->
+	  <link href="webjars/materialize/0.96.1/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="styles/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+	<body>
+
+		<div class="container" ng-app="CaixaSeguradoraApp">
+			<div class="row" ng-controller="produtoCtrl">
+				<div class="col s6">
+					 <table class="striped">
+				        <thead>
+				          <tr>
+				              <th data-field="id">Id</th>
+				              <th data-field="name">Nome</th>
+				          </tr>
+				        </thead>
+				        <tbody ng-repeat="produto in produtos">
+				        	<tr>
+				            	<td>{{ produto.id }}</td>
+				            	<td>{{ produto.nome }}</td>
+				          	</tr>
+				      	</tbody>
+				      </table>
+				</div>
+			</div>
+		</div>
+
+		<!--  Scripts-->
+		<script src="webjars/jquery/2.1.4/jquery.js"></script>
+		<script src="webjars/angularjs/1.4.0/angular.js"></script>
+		<script src="webjars/materialize/0.96.1/dist/js/materialize.min.js"></script>
+		<script src="scripts/init.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/produto-controller.js"></script>
+	</body>
+</html>
