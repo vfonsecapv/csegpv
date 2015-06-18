@@ -9,7 +9,7 @@ import caixaseguradora.client.*
 class DefaultConfiguration {
 
 	@Bean
-	ProdutoRepository cityRepository() {
-		new ProdutoRepositoryFactory().create("http://192.168.100.7:9090")
+	ProdutoRepository produtoRepository() {
+		new ProdutoRepositoryFactory().create("http://localhost:8989")
 	}
 }

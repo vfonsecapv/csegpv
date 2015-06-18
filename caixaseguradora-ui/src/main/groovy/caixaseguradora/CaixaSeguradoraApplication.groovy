@@ -2,9 +2,10 @@ package caixaseguradora
 
 import org.springframework.boot.*
 import org.springframework.boot.autoconfigure.*
-import groovy.transform.CompileStatic
 
-@CompileStatic
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker
+
+@EnableCircuitBreaker
 @SpringBootApplication
 class CaixaSeguradoraApplication {
 	static void main(String... args) {

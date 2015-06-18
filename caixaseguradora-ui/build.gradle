@@ -34,8 +34,12 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
     compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
+
+    compile("com.netflix.feign:feign-slf4j:8.4.1")
+    compile("org.springframework.boot:spring-boot-starter-actuator:1.2.4.RELEASE")
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix:1.0.2.RELEASE")
+    
     compile("org.codehaus.groovy:groovy-all:2.3.10")
 
 	compile project (":caixaseguradora-client-produto")

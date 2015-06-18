@@ -34,12 +34,15 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
     compile("org.springframework.cloud:spring-cloud-starter-feign")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-hateoas")
+
 	compile("com.netflix.feign:feign-core:8.4.1")
 	compile("com.netflix.feign:feign-jackson:6.1.3")
 	compile("com.google.code.gson:gson:2.2.4") 
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-hateoas")
+
     compile("org.codehaus.groovy:groovy")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
