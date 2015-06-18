@@ -12,11 +12,9 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand
 @RequestMapping("/produtos")
 class ProdutoController {
 
-	@Autowired
 	ProdutoRepository repository
 
-	ProdutoController() {}
-
+	@Autowired
 	ProdutoController(ProdutoRepository repository) {
 		this.repository = repository
 	}

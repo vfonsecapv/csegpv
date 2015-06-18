@@ -9,11 +9,11 @@ import caixaseguradora.client.ProdutoRepository;
 
 
 @Configuration
-@Profile("cloud")
+@Profile({"cloud","local"})
 public class CloudConfiguration extends AbstractCloudConfig {	
 
     @Bean
-    public ProdutoRepository cityRepository() {
+    public ProdutoRepository produtoRepository() {
         return connectionFactory().service(ProdutoRepository.class);
     }
 
