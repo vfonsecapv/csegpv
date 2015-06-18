@@ -1,17 +1,16 @@
-package caixaseguradora.client.connector;
+package caixaseguradora.client.connector
 
-import org.springframework.cloud.service.AbstractServiceConnectorCreator;
-import org.springframework.cloud.service.ServiceConnectorConfig;
+import org.springframework.cloud.service.AbstractServiceConnectorCreator
+import org.springframework.cloud.service.ServiceConnectorConfig
 
-import caixaseguradora.client.ProdutoRepository;
-import caixaseguradora.client.ProdutoRepositoryFactory;
-import caixaseguradora.client.cloud.WebServiceInfo;
+import caixaseguradora.client.ProdutoRepository
+import caixaseguradora.client.ProdutoRepositoryFactory
+import caixaseguradora.client.cloud.WebServiceInfo
 
-public class ProdutosRepositoryConnectionCreator extends AbstractServiceConnectorCreator<ProdutoRepository, WebServiceInfo> {
-
+class ProdutosRepositoryConnectionCreator extends AbstractServiceConnectorCreator<ProdutoRepository, WebServiceInfo> {
     @Override
-    public ProdutoRepository create(WebServiceInfo serviceInfo, ServiceConnectorConfig serviceConnectorConfig) {
-        return new ProdutoRepositoryFactory().create(serviceInfo.getUri());
+    ProdutoRepository create(WebServiceInfo serviceInfo, ServiceConnectorConfig serviceConnectorConfig) {
+        new ProdutoRepositoryFactory().create(serviceInfo.getUri())
     }
 
 }
