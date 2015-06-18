@@ -1,15 +1,17 @@
 package caixaseguradora.config
 
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.*
 
 import caixaseguradora.client.*
 
-@Configuration
 @Profile("default")
 class DefaultConfiguration {
 
+	private String url = "http://192.168.100.7:9090";
+	
 	@Bean
 	ProdutoRepository cityRepository() {
-		new ProdutoRepositoryFactory().create("http://192.168.100.7:9090")
+		new ProdutoRepositoryFactory().create(url)
 	}
 }
