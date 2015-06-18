@@ -1,6 +1,7 @@
 package caixaseguradora.client
 
 import org.springframework.stereotype.Repository
+
 import feign.RequestLine
 
 @Repository
