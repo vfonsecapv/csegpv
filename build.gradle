@@ -31,6 +31,10 @@ project(':caixaseguradora-ui') {
     
 }
 
+project(':caixaseguradora-hystrix-dashboard') {
+    
+}
+
 project(':caixaseguradora-client-produto') {
     
 }

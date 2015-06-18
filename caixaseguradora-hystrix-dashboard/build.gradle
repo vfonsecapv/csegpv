@@ -17,7 +17,7 @@ apply plugin: 'java'
 apply plugin: 'spring-boot' 
 
 jar {
-    baseName = 'caixaseguradora-service-produto'
+    baseName = 'caixaseguradora-hystrix-dashboard'
     version = '0.0.1-SNAPSHOT'
 }
 
@@ -33,11 +33,11 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-cloud-connectors")
     compile("org.springframework.boot:spring-boot-starter-hateoas")
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.0.2.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-actuator:1.2.4.RELEASE")
     compile("org.springframework.cloud:spring-cloud-starter-hystrix:1.0.2.RELEASE")
     compile("org.codehaus.groovy:groovy-all:2.3.10")
     compile("com.netflix.feign:feign-slf4j:8.4.1")
-    compile project (":caixaseguradora-redis")
 }
 
 dependencyManagement {
@@ -47,7 +47,7 @@ dependencyManagement {
 }
 
 springBoot {
-    mainClass = 'caixaseguradora.CaixaSeguradoraApplication'
+    mainClass = 'caixaseguradora.hystrix.CaixaSeguradoraApplication'
 }
 
 task wrapper(type: Wrapper) {
