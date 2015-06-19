@@ -1,7 +1,7 @@
 ---
 applications:
 - name: cseg-ui
-  memory: 1GB
+  memory: 512M
   instances: 1
   path: build/libs/caixaseguradora-ui-0.0.1-SNAPSHOT.jar
   services: [ cseg-ws-prod ]
