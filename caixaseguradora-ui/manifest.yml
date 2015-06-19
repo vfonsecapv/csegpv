@@ -4,6 +4,6 @@ applications:
   memory: 1GB
   instances: 1
   path: build/libs/caixaseguradora-ui-0.0.1-SNAPSHOT.jar
-  services: [ cseg-serv-pess, cseg-serv-prod ]
+  services: [ cseg-ws-prod ]
   env:
     SPRING_PROFILES_ACTIVE: cloud

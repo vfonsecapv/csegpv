@@ -1,16 +1,13 @@
-package caixaseguradora
+package caixaseguradora.ui
 
-import org.springframework.web.bind.annotation.*
 import org.springframework.boot.*
 import org.springframework.boot.autoconfigure.*
 
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker
+
+@EnableCircuitBreaker
 @SpringBootApplication
 class CaixaSeguradoraApplication {
-	@RequestMapping("/")
-	public String home() {
-		"forward:/hystrix";
-	}
-
 	static void main(String... args) {
         SpringApplication.run(CaixaSeguradoraApplication, args)
     }
