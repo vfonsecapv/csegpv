@@ -10,6 +10,6 @@ class DefaultConfiguration {
 
 	@Bean
 	ProdutoRepository produtoRepository() {
-		new ProdutoRepositoryFactory().create("http://10.107.65.74:8989")
+		new ProdutoRepositoryFactory().create("http://localhost:8989")
 	}
 }
