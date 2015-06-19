@@ -15,6 +15,4 @@ class CloudConfiguration extends AbstractCloudConfig {
     ProdutoRepository produtoRepository() {
         return connectionFactory().service(ProdutoRepository.class)
     }
-
 }
-
