@@ -36,13 +36,14 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-hystrix:1.0.2.RELEASE")
 
     compile("org.springframework.amqp:spring-rabbit:1.4.5.RELEASE")
-    compile("org.codehaus.groovy:groovy-all:2.3.10")
 
     compile("com.netflix.archaius:archaius-core:0.7.1")
+    
+    compile("org.codehaus.groovy:groovy-all:2.3.10")
 }
 
 springBoot {
-    mainClass = 'caixaseguradora.hystrix.CaixaSeguradoraApplication'
+    mainClass = 'caixaseguradora.CaixaSeguradoraApplication'
 }
 
 task wrapper(type: Wrapper) {

@@ -26,22 +26,6 @@ subprojects {
     repositories {
         mavenCentral()
     }
-} 
-
-project(':caixaseguradora-hystrix-dashboard') {
-    
-}
-
-project(':caixaseguradora-redis') {
-    
-}
-
-project(':caixaseguradora-service-produto') {
-    
-}
-
-project(':caixaseguradora-service-pessoa') {
-    
 }
 
 project(':caixaseguradora-client-produto') {
@@ -77,7 +61,7 @@ project(':caixaseguradora-ui') {
     }
 
     springBoot {
-        mainClass = 'caixaseguradora.ui.CaixaSeguradoraApplication'
+        mainClass = 'caixaseguradora.CaixaSeguradoraApplication'
     }
 
     dependencies {

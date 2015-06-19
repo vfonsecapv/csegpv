@@ -14,11 +14,13 @@ class ProdutoController {
 	RedisConfig redis
 
 	@RequestMapping(method=RequestMethod.POST)
+	@ResponseBody
 	newProduto(@RequestBody Produto produto) {
 		redis.setEntity("prd:" + produto.id, produto)
 	}
 
 	@RequestMapping("/produtos")
+	@ResponseBody
 	getAllProdutos() {
 		def prdKeys = redis.getTemplate().keys("prd:*")
 		def produtos = []
@@ -31,11 +33,13 @@ class ProdutoController {
 	}
 
 	@RequestMapping("/prd/{key}")
+	@ResponseBody
 	getProdutoByKey(@PathVariable("key") String key) {
 		redis.getEntity(Produto.class, "prd:" + key)
 	}
 
 	@RequestMapping("/del/{key}")
+	@ResponseBody
 	deleteProdutoByKey(@PathVariable("key") String key) {
 		redis.getTemplate().delete("prd:" + key)
 	}

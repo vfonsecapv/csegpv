@@ -1,4 +1,4 @@
-package caixaseguradora.service.pessoa
+package caixaseguradora
 
 import org.springframework.boot.*
 import org.springframework.boot.autoconfigure.*

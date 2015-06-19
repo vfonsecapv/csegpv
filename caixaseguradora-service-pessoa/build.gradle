@@ -38,7 +38,7 @@ dependencies {
 }
 
 springBoot {
-    mainClass = 'caixaseguradora.service.pessoa.CaixaSeguradoraApplication'
+    mainClass = 'caixaseguradora.CaixaSeguradoraApplication'
 }
 
 task wrapper(type: Wrapper) {
