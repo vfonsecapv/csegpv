@@ -6,7 +6,7 @@ import org.springframework.stereotype.*
 
 @Component
 interface ProdutoRepository {
-    @RequestLine("GET /produto/produtos")
+    @RequestLine("GET /produtos")
     def getProdutos()
 
 }

@@ -28,7 +28,6 @@ class ProdutosWebServiceInfoCreator extends CloudFoundryServiceInfoCreator<WebSe
 
         Map<String, Object> credentials = getCredentials(serviceData);
         String uri = getStringFromCredentials(credentials, "uri", "url")
-
         new WebServiceInfo(id, uri)
     }
 

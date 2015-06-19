@@ -7,12 +7,15 @@ import org.springframework.context.annotation.Profile
 
 import caixaseguradora.client.ProdutoRepository
 
+import org.springframework.cloud.config.java.*
+
 @Configuration
 @Profile("cloud")
+@ServiceScan
 class CloudConfiguration extends AbstractCloudConfig {	
 
     @Bean
     ProdutoRepository produtoRepository() {
-        return connectionFactory().service(ProdutoRepository.class)
+        connectionFactory().service(ProdutoRepository.class)
     }
 }

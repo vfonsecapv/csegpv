@@ -86,6 +86,8 @@ project(':caixaseguradora-ui') {
         compile("org.webjars:angular-ui:0.4.0-3")
         compile("org.webjars:jquery:2.1.4")
 
+        compile("org.slf4j:slf4j-api:1.6.4")
+
         versionManagement("io.spring.platform:platform-versions:1.0.2.RELEASE@properties")
     }
 }
