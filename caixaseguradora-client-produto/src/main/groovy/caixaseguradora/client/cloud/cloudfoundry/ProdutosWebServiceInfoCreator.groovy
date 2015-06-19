@@ -12,7 +12,7 @@ class ProdutosWebServiceInfoCreator extends CloudFoundryServiceInfoCreator<WebSe
     static final String PRODUTO_TAG = "produto"
 
     ProdutosWebServiceInfoCreator() {
-        super(new Tags(PRODUTO_TAG), "")
+        super(new Tags(PRODUTO_TAG))
     }
 
     @Override

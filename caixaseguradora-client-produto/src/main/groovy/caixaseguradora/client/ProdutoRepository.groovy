@@ -1,10 +1,10 @@
 package caixaseguradora.client
 
-import org.springframework.stereotype.Repository
-
 import feign.RequestLine
 
-@Repository
+import org.springframework.stereotype.*
+
+@Component
 interface ProdutoRepository {
     @RequestLine("GET /produto/produtos")
     def getProdutos()
