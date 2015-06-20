@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.1.12.RELEASE'
+        springBootVersion = '1.2.3.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -13,8 +13,6 @@ buildscript {
 }
 
 apply plugin: 'groovy'
-apply plugin: 'java'
-apply plugin: 'spring-boot' 
 
 jar {
     baseName = 'caixaseguradora-redis'

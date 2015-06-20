@@ -1,1 +1,1 @@
-include "caixaseguradora-ui", "caixaseguradora-client-produto", "caixaseguradora-service-produto", "caixaseguradora-service-pessoa", "caixaseguradora-redis", "caixaseguradora-hystrix-dashboard"
+include "caixaseguradora-ui", "caixaseguradora-service-produto", "caixaseguradora-service-pessoa", "caixaseguradora-redis"

@@ -1,8 +1,0 @@
----
-applications:
-- name: cseg-hystrix
-  memory: 512M
-  instances: 1
-  path: build/libs/caixaseguradora-hystrix-dashboard-0.0.1-SNAPSHOT.jar
-  env:
-    SPRING_PROFILES_ACTIVE: cloud

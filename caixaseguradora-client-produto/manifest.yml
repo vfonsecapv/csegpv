@@ -1,8 +1,0 @@
----
-applications:
-- name: cseg-client-produto
-  memory: 1GB
-  instances: 1
-  path: build/libs/caixaseguradora-client-produto-0.0.1-SNAPSHOT.jar
-  env:
-    SPRING_PROFILES_ACTIVE: cloud

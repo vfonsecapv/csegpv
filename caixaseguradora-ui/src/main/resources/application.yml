@@ -1,0 +1,3 @@
+produto-service:
+ ribbon:
+  listOfServers: ${vcap.services.cseg-ws-produtos.credentials.uri:http://localhost:8989}
