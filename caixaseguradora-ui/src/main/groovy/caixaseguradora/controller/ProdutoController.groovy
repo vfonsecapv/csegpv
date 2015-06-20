@@ -8,9 +8,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand
 
-import org.springframework.cloud.netflix.feign.FeignClient
-
 import org.springframework.web.bind.annotation.*
+
+import caixaseguradora.client.ProdutoRepository
 
 @RestController
 @RefreshScope
@@ -34,10 +34,4 @@ class ProdutoController {
 	def defaultlistarProdutos() {
 		"Serviço OFF!"
 	}
-}
-
-@FeignClient("produto-service")
-interface ProdutoRepository {
-    @RequestMapping(value = "/produto/produtos", method = RequestMethod.GET)
-    def getProdutos()
 }
