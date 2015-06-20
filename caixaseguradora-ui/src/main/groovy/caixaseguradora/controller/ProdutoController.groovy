@@ -24,6 +24,7 @@ class ProdutoController {
 		this.repository = repository
 	}
 
+	@HystrixCommand(fallbackMethod = "defaultlistarProdutos")
 	@RequestMapping("/lista")	
 	@ResponseBody
 	def listarProdutos() {
