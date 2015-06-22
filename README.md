@@ -7,6 +7,6 @@ Using Springboot and Springcloud
 
 What you need to install to run it?
 
-Redis (OSX or Windows)
-Java 8
-Gradle
+#Redis (OSX or Windows)
+#Java 8
+#Gradle
