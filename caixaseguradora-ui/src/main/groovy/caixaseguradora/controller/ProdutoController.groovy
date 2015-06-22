@@ -8,8 +8,6 @@ import org.springframework.cloud.context.config.annotation.RefreshScope
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand
 
-import org.springframework.web.bind.annotation.*
-
 import caixaseguradora.client.ProdutoRepository
 
 @RestController

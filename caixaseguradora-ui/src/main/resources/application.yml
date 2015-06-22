@@ -1,3 +1,6 @@
 produto-service:
  ribbon:
-  listOfServers: http://cseg-service-produto.south.fe.pivotal.io
+  listOfServers: http://localhost:8989
+pessoa-service:
+ ribbon:
+  listOfServers: http://localhost:8990
