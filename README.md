@@ -7,6 +7,13 @@ Using Springboot and Springcloud
 
 What you need to install to run it?
 
-#Redis (OSX or Windows)
-#Java 8
-#Gradle
+Local  |
+------------- |
+Redis |
+Gradle |
+Java 8 |
+
+Cloud  |
+------------- |
+Pivotal Cloud Foundry (http://run.pivotal.io) |
+Redis bind service |
