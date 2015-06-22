@@ -26,8 +26,8 @@ go to caixaseguradora-ui>src>main>groovy>resources>application.yml
 ```
 produto-service:
  ribbon:
-  listOfServers: {end point for produto-service app with http: // and without / at the end of the URI}
+  listOfServers: {URI for produto-service ex.: http://your_prod_aap.pivotal.io}
 pessoa-service:
  ribbon:
-  listOfServers: {end point for pessoa-service app with http: // and without / at the end of the URI}
+  listOfServers: {URI for produto-service ex.: http://your_serv_aap.pivotal.io}
 ```
