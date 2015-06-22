@@ -19,14 +19,9 @@ Cloud  |
 Pivotal Cloud Foundry (http://run.pivotal.io) |
 Redis bind service |
 
-To run on Pivotal Cloud Foundry you need to change one files:
+To run on Pivotal Cloud Foundry you need to change one file:
 
-_caixaseguradora-ui
-__src
-___main
-____groovy
-_____resources
-______application.yml
+go to caixaseguradora-ui>src>main>groovy>resources>application.yml
 
 ```
 produto-service:
